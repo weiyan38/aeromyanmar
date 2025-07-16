@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeromyanmar</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="">
+    <!-- bootstrap css1 js1 -->
+    <link rel="stylesheet" href="./assets/libs/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <!-- fontawesone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jquery ui css1 js1 -->
+    <link rel="stylesheet" href="./assets/libs/jquery-ui-1.13.2/jquery-ui.min.css">
+    <!-- lightbox2 css1 js1  -->
+    <link rel="stylesheet" href="./assets/libs/lightbox2-2.11.4/dist/css/lightbox.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./classic/style.css">
+
+</head>
+
+<body>
+
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+        <div class="container-fluid">
+            <a href="./index.html" class="navbar-brand text-light mx-3">
+                <img src="./assets/images/logo.png" width="100" class="" alt="">
+                <span class="text-uppercase fw-bold mx-2">Aero Myanmar</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end me-3 p-3 p-lg-1" id="navbarSupportedContent">
+                <ul class="navbar-nav gap-3 mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light navmenus" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light navmenus" href="#services">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light navmenus" href="#aboutus">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light navmenus" href="#partners">Partners</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light navmenus" href="#contact">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- banner start -->
+    <section class="">
+        <div id="bannercarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#bannercarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#bannercarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#bannercarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#bannercarousel" data-bs-slide-to="3"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#bannercarousel" data-bs-slide-to="4"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active position-relative">
+                    <img src="./assets/images/banner/1.jpg" class="d-block w-100" alt="...">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+                    <div class="carousel-caption">
+                        <h5 class="fs-2 fs-lg-1 fw-bold mb-4 bannertext">Embrace cybersecurity that enables bold
+                            innovation</h5>
+                        <button class="btn btn-warning readmorebtn" onclick="goToComingSoon()"><span>Read
+                                more</span></button>
+                    </div>
+                </div>
+
+                <div class="carousel-item position-relative">
+                    <img src="./assets/images/banner/2.jpg" class="d-block w-100" alt="...">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+                    <div class="carousel-caption">
+                        <h5 class="fs-2 fs-lg-1 fw-bold mb-4 bannertext">High-performance IP Networking for Scalable
+                            Infrastructure
+                        </h5>
+                        <button class="btn btn-warning readmorebtn" onclick="goToComingSoon()"><span>Read
+                                more</span></button>
+                    </div>
+                </div>
+
+                <div class="carousel-item position-relative">
+                    <img src="./assets/images/banner/3.jpg" class="d-block w-100" alt="...">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+                    <div class="carousel-caption">
+                        <h5 class="fs-2 fs-lg-1 fw-bold mb-4 bannertext">Secure & Scalable Cloud Connectivity
+                            our world</h5>
+                        <button class="btn btn-warning readmorebtn" onclick="goToComingSoon()"><span>Read
+                                more</span></button>
+                    </div>
+                </div>
+
+                <div class="carousel-item position-relative">
+                    <img src="./assets/images/banner/4.jpg" class="d-block w-100" alt="...">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+                    <div class="carousel-caption">
+                        <h5 class="fs-2 fs-lg-1 fw-bold mb-4 bannertext">End-to-End Network Automation for Zero-Touch
+                            Operations
+                        </h5>
+                        <button class="btn btn-warning readmorebtn" onclick="goToComingSoon()"><span>Read
+                                more</span></button>
+                    </div>
+                </div>
+
+                <div class="carousel-item position-relative">
+                    <img src="./assets/images/banner/5.jpg" class="d-block w-100" alt="...">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+                    <div class="carousel-caption">
+                        <h5 class="fs-2 fs-lg-1 fw-bold mb-4 bannertext">Your Data Center, Smarter Every Second
+                        </h5>
+                        <button class="btn btn-warning readmorebtn" onclick="goToComingSoon()"><span>Read
+                                more</span></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- banner end -->
+
+    <!-- spotlight start -->
+    <section class="p-4 pt-5 bg-dark" id="services">
+        <div class="container">
+            <div class="row">
+
+                <div class="mb-5">
+                    <h5 class="py-3 fs-1 fw-bold text-light">Solutions What We Do</h5>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="card border-0 rounded-0 spotlightcards">
+                        <img src="./assets/images/spolight/1.jpg" alt="">
+                        <div class="p-3 spotlightdiv">
+                            <p class="text-light fw-bold fs-2">Security</p>
+                            <ul class="servicelists">
+                                <li class="text-light fs-5">Network Security</li>
+                                <li class="text-light fs-5">Database Security</li>
+                                <li class="text-light fs-5">Endpoint Security</li>
+                                <li class="text-light fs-5">Data Security</li>
+                                <li class="text-light fs-5">SOC Solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="card border-0 rounded-0 spotlightcards">
+                        <img src="./assets/images/spolight/2.jpg" alt="">
+                        <div class="p-3 spotlightdiv">
+                            <p class="text-light fw-bold fs-2">IP Networks</p>
+                            <ul class="servicelists">
+                                <li class="text-light fs-5">IP MPLS</li>
+                                <li class="text-light fs-5">Carrier Ethernet</li>
+                                <li class="text-light fs-5">Converged Super Core & Edge</li>
+                                <li class="text-light fs-5">High Speed Provider Edge</li>
+                                <li class="text-light fs-5">Routing, Switching, Aggregation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="card border-0 rounded-0 spotlightcards">
+                        <img src="./assets/images/spolight/3.jpg" alt="">
+                        <div class="p-3 spotlightdiv">
+                            <p class="text-light fw-bold fs-2">Cloud</p>
+                            <ul class="servicelists">
+                                <li class="text-light fs-5">Public Cloud</li>
+                                <li class="text-light fs-5">Private Cloud</li>
+                                <li class="text-light fs-5">Hybrid Cloud</li>
+                                <li class="text-light fs-5">Cloud Security</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="card border-0 rounded-0 spotlightcards">
+                        <img src="./assets/images/spolight/4.jpg" alt="">
+                        <div class="p-3 spotlightdiv">
+                            <p class="text-light fw-bold fs-2">Automation</p>
+                            <ul class="servicelists">
+                                <li class="text-light fs-5">IT Automation</li>
+                                <li class="text-light fs-5">Marketing Automation</li>
+                                <li class="text-light fs-5">Workflow Automation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="card border-0 rounded-0 spotlightcards">
+                        <img src="./assets/images/spolight/5.jpg" alt="">
+                        <div class="p-3 spotlightdiv">
+                            <p class="text-light fw-bold fs-2">DC Infra</p>
+                            <ul class="servicelists">
+                                <li class="text-light fs-5">Data Center Cooling Solutions</li>
+                                <li class="text-light fs-5">Power and UPS Solutions</li>
+                                <li class="text-light fs-5">Structured Cabling</li>
+                                <li class="text-light fs-5">Fire Fighting Solutions</li>
+                                <li class="text-light fs-5">PA System</li>
+                                <li class="text-light fs-5">ELV System</li>
+                                <li class="text-light fs-5">Centralized Surveillance Solutions</li>
+                                <li class="text-light fs-5">Access Control System</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="card border-0 rounded-0 spotlightcards">
+                        <img src="./assets/images/spolight/6.jpg" alt="">
+                        <div class="p-3 spotlightdiv">
+                            <p class="text-light fw-bold fs-2">Consultation</p>
+                            <ul class="servicelists">
+                                <li class="text-light fs-5">ERP Systems Consultation- SAP B1, SAP S4</li>
+                                <li class="text-light fs-5">CRM Software Consultation</li>
+                                <li class="text-light fs-5">HR System Consultation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="card border-0 rounded-0 spotlightcards">
+                        <img src="./assets/images/spolight/7.jpg
+                        " alt="">
+                        <div class="p-3 spotlightdiv">
+                            <p class="text-light fw-bold fs-2">Analytics</p>
+                            <ul class="servicelists">
+                                <li class="text-light fs-5">Building Management Analytics</li>
+                                <li class="text-light fs-5">Big Data Analytics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- spotlight end -->
+
+    <!-- werone start -->
+    <section class="p-4" id="aboutus">
+        <div class="container">
+            <div class="row">
+
+                <div class="mb-5">
+                    <h5 class="py-3 fs-1 fw-bold">We're Aero Myanmar</h5>
+                    <p class="">From strategic consulting to leading-edge technologies, we enable experiences that
+                        transform organizations, disrupt industries, and shape a better society for all.</p>
+                    <a href="./comingsoon.html" class="text-primary weronelearnmore">Learn more About Us <i
+                            class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3" onclick="goToComingSoon()">
+                    <div class="col-md-10 col-lg-9 mx-auto">
+                        <div class="card border-0 rounded-0 weronecards">
+                            <img src="./assets/images/werone/1.jpg" alt="">
+                            <div class="weronediv">
+                                <p class="text-light fw-bold fs-4 mb-5">History</p>
+                                <a href="#" class="text-light weronereadmore">Read More <i
+                                        class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3" onclick="goToComingSoon()">
+                    <div class="col-md-10 col-lg-9 mx-auto">
+                        <div class="card border-0 rounded-0 weronecards">
+                            <img src="./assets/images/werone/2.jpg
+                        " alt="">
+                            <div class="weronediv">
+                                <p class="text-light fw-bold fs-4 mb-5">Our Way</p>
+                                <a href="#" class="text-light weronereadmore">Read More <i
+                                        class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3" onclick="goToComingSoon()">
+                    <div class="col-md-10 col-lg-9 mx-auto">
+                        <div class="card border-0 rounded-0 weronecards">
+                            <img src="./assets/images/werone/3.jpg" alt="">
+                            <div class="weronediv">
+                                <p class="text-light fw-bold fs-4 mb-5">Technologies</p>
+                                <a href="#" class="text-light weronereadmore">Read More <i
+                                        class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container mt-5">
+
+            <div class="row">
+                <div class="col-12 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+
+                                <div class="col-12 col-md-4">
+                                    <div class="d-flex justify-content-center flex-column align-items-center">
+                                        <img src="./assets/images/successful-projects.svg" width="60" height="60"
+                                            alt="">
+                                        <p class="fw-bold fs-3 my-2">400 +</p>
+                                        <p class="fw-bold">Project Delivered</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-4 my-5 my-md-0">
+                                    <div class="d-flex justify-content-center flex-column align-items-center">
+                                        <img src="./assets/images/trusted-clients.svg" width="60" height="60" alt="">
+                                        <p class="fw-bold fs-3 my-2">50 +</p>
+                                        <p class="fw-bold">Trusted Clients</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-4">
+                                    <div class="d-flex justify-content-center flex-column align-items-center">
+                                        <img src="./assets/images/professionals.svg" width="60" height="60" alt="">
+                                        <p class="fw-bold fs-3 my-2">20 +</p>
+                                        <p class="fw-bold">Professions</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container mt-5" style="overflow: hidden;">
+            <div class="row">
+
+                <div class="col-12 col-md-6 p-5 visiontext">
+                    <p class="text-uppercase text-secondary">Vision</p>
+                    <p class="fw-bold fs-4 " style="color: rgb(81, 124, 126);">Focusing on business sector such as
+                        Banking, Real Estate and Manufacturing Industry</p>
+                    <p>Aero's main concept is to have well-documented workbook for every project and services we are
+                        offering to our valued clients so that they can retain smooth experience to review and keep
+                        track of every step. We offer one-stop service to all our customers in IT & Communication
+                        industry with the installed product base and our skilled manpower.</p>
+                </div>
+
+                <div class="col-12 col-md-6 p-5 goaltext">
+                    <p class="text-uppercase text-secondary">Goal</p>
+                    <p class="fw-bold fs-4 " style="color: rgb(81, 124, 126);">Open-minded business reputation and daily
+                        operation is a must</p>
+                    <p>With customers' business reputation and daily operation in mind, we always keep adequate
+                        maintenance repairs in-stock and have proficient 24/7 standby engineers to provide hardware
+                        replacement and ensure minimum impact to our customers' networks. In terms of Information &
+                        communication industry, Aero has been a reputable System Integrator that has designed and rolled
+                        out tremendous amount of successful network infrastructure and have displayed capability on
+                        supporting Service Providers, Banks, Manufacturers, Educational Institutes and Enterprises.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- werone end -->
+
+    <!-- mission start -->
+    <section class="p-4">
+        <div class="container">
+            <div class="mb-5">
+                <h5 class="py-3 fs-1 fw-bold text-center">Our Certification</h5>
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card border-0 rounded-0 missioncards">
+                        <div class="d-flex justify-content-center align-items-center flex-column">
+                            <div class="d-flex justify-content-center align-items-center"
+                                style="width: 180px; height: 100px;">
+                                <img src="./assets/images/certification/juniper.png" class="img-fluid" alt="">
+                            </div>
+                            <p class="text-primary mt-4 small">JNCIP / JNCIS / JNCIA</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card border-0 rounded-0 missioncards">
+                        <div class="d-flex justify-content-center align-items-center flex-column">
+                            <div class="d-flex justify-content-center align-items-center"
+                                style="width: 180px; height: 100px;">
+                                <img src="./assets/images/certification/trend-micro.png" class="img-fluid" alt="">
+                            </div>
+                            <p class="text-primary mt-4 small">DSCP / NDCP</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card border-0 rounded-0 missioncards">
+                        <div class="d-flex justify-content-center align-items-center flex-column">
+                            <div class="d-flex justify-content-center align-items-center"
+                                style="width: 180px; height: 100px;">
+                                <img src="./assets/images/certification/paloalto.png" class="img-fluid" alt="">
+                            </div>
+                            <p class="text-primary mt-4 small">PCNSE</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card border-0 rounded-0 missioncards">
+                        <div class="d-flex justify-content-center align-items-center flex-column">
+                            <div class="d-flex justify-content-center align-items-center"
+                                style="width: 180px; height: 100px;">
+                                <img src="./assets/images/certification/solarwinds.png" class="img-fluid" alt="">
+                            </div>
+                            <p class="text-primary mt-4 small">SolarWinds Certified Professional</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card border-0 rounded-0 missioncards">
+                        <div class="d-flex justify-content-center align-items-center flex-column">
+                            <div class="d-flex justify-content-center align-items-center"
+                                style="width: 180px; height: 100px;">
+                                <img src="./assets/images/certification/ruckus.png" class="img-fluid" alt="">
+                            </div>
+                            <p class="text-primary mt-4 small">Ruckus Certified SZ Admin</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card border-0 rounded-0 missioncards">
+                        <div class="d-flex justify-content-center align-items-center flex-column">
+                            <div class="d-flex justify-content-center align-items-center"
+                                style="width: 180px; height: 100px;">
+                                <img src="./assets/images/certification/isc2-candidate-cert.png" width="100" alt="">
+                            </div>
+                            <p class="text-primary mt-4 small">ISC2 Candidate</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card border-0 rounded-0 missioncards">
+                        <div class="d-flex justify-content-center align-items-center flex-column">
+                            <div class="d-flex justify-content-center align-items-center"
+                                style="width: 180px; height: 100px;">
+                                <img src="./assets/images/certification/aviatrix-ace-associate-cert.png" width="100"
+                                    alt="">
+                            </div>
+                            <p class="text-primary mt-4 small">ACE Associate</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-md-6 mb-3">
+                    <div class="scroll-section bg-light shadow p-3 rounded">
+                        <div class="mb-4">
+                            <img src="./assets/images/certification/checkpoint-logo.png" width="200" height="100" alt=""
+                                class="img-fluid">
+                        </div>
+                        <div class="scroll-track">
+                            <img src="./assets/images/certification/cp1.png" alt="1" class="img-fluid">
+                            <img src="./assets/images/certification/cp2.png" alt="2" class="img-fluid">
+                            <img src="./assets/images/certification/cp3.png" alt="3" class="img-fluid">
+                            <img src="./assets/images/certification/cp4.png" alt="4" class="img-fluid">
+                            <img src="./assets/images/certification/cp5.png" alt="5" class="img-fluid">
+                            <img src="./assets/images/certification/cp6.png" alt="6" class="img-fluid">
+
+                            <img src="./assets/images/certification/cp1.png" alt="1" class="img-fluid">
+                            <img src="./assets/images/certification/cp2.png" alt="2" class="img-fluid">
+                            <img src="./assets/images/certification/cp3.png" alt="3" class="img-fluid">
+                            <img src="./assets/images/certification/cp4.png" alt="4" class="img-fluid">
+                            <img src="./assets/images/certification/cp5.png" alt="5" class="img-fluid">
+                            <img src="./assets/images/certification/cp6.png" alt="6" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 mb-3">
+                    <div class="scroll-section bg-light shadow p-3 rounded">
+                        <div class="mb-4">
+                            <img src="./assets/images/certification/aws-logo.png" width="112" height="" alt=""
+                                class="img-fluid">
+                        </div>
+                        <div class="scroll-track">
+                            <img src="./assets/images/certification/aw1.png" alt="1" class="img-fluid">
+                            <img src="./assets/images/certification/aw2.png" alt="2" class="img-fluid">
+                            <img src="./assets/images/certification/aw3.png" alt="3" class="img-fluid">
+                            <img src="./assets/images/certification/aw4.png" alt="4" class="img-fluid">
+                            <img src="./assets/images/certification/aw5.png" alt="5" class="img-fluid">
+                            <img src="./assets/images/certification/aw6.png" alt="6" class="img-fluid">
+
+                            <img src="./assets/images/certification/aw1.png" alt="1" class="img-fluid">
+                            <img src="./assets/images/certification/aw2.png" alt="2" class="img-fluid">
+                            <img src="./assets/images/certification/aw3.png" alt="3" class="img-fluid">
+                            <img src="./assets/images/certification/aw4.png" alt="4" class="img-fluid">
+                            <img src="./assets/images/certification/aw5.png" alt="5" class="img-fluid">
+                            <img src="./assets/images/certification/aw6.png" alt="6" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 mb-3">
+                    <div class="scroll-section bg-light shadow p-3 rounded">
+                        <div class="mb-4">
+                            <img src="./assets/images/certification/cisco-logo.png" width="100" height="" alt=""
+                                class="img-fluid">
+                        </div>
+                        <div class="scroll-track">
+                            <img src="./assets/images/certification/ci1.png" alt="1" class="img-fluid">
+                            <img src="./assets/images/certification/ci2.png" alt="2" class="img-fluid">
+                            <img src="./assets/images/certification/ci3.png" alt="3" class="img-fluid">
+                            <img src="./assets/images/certification/ci4.png" alt="4" class="img-fluid">
+                            <img src="./assets/images/certification/ci5.png" alt="5" class="img-fluid">
+
+                            <img src="./assets/images/certification/ci1.png" alt="1" class="img-fluid">
+                            <img src="./assets/images/certification/ci2.png" alt="2" class="img-fluid">
+                            <img src="./assets/images/certification/ci3.png" alt="3" class="img-fluid">
+                            <img src="./assets/images/certification/ci4.png" alt="4" class="img-fluid">
+                            <img src="./assets/images/certification/ci5.png" alt="5" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 mb-3">
+                    <div class="scroll-section bg-light shadow p-3 rounded">
+                        <div class="mb-5">
+                            <img src="./assets/images/certification/vmware-logo.png" width="207" height="" alt=""
+                                class="img-fluid">
+                        </div>
+                        <div class="scroll-track">
+                            <img src="./assets/images/certification/vm1.png" alt="1" class="img-fluid">
+                            <img src="./assets/images/certification/vm2.png" alt="2" class="img-fluid">
+                            <img src="./assets/images/certification/vm3.png" alt="3" class="img-fluid">
+
+                            <img src="./assets/images/certification/vm1.png" alt="1" class="img-fluid">
+                            <img src="./assets/images/certification/vm2.png" alt="2" class="img-fluid">
+                            <img src="./assets/images/certification/vm3.png" alt="3" class="img-fluid">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- mission end -->
+
+    <!-- investor start -->
+    <section class="p-4 pt-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="mb-5">
+                    <h5 class="py-3 fs-1 fw-bold">Investors</h5>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="col-md-10 mx-auto">
+                        <div class="card border-0 rounded-0 investorcards" onclick="goToComingSoon()">
+                            <img src="./assets/images/investor/2.jpg" alt="">
+                            <div class="p-3 investordiv">
+                                <p class="text-light fw-bold fs-3">Financial charts</p>
+                            </div>
+                            <a href="#" class="text-light investorreadmore">Read More <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="col-md-10 mx-auto">
+                        <div class="card border-0 rounded-0 investorcards" onclick="goToComingSoon()">
+                            <img src="./assets/images/investor/3.jpg" alt="">
+                            <div class="p-3 investordiv">
+                                <p class="text-light fw-bold fs-3">Financial Reports</p>
+                            </div>
+                            <a href="#" class="text-light investorreadmore">Read More <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- investor end -->
+
+    <!-- media start -->
+    <section class="p-4 pt-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="mb-5">
+                    <h5 class="py-3 fs-1 fw-bold">What we can Guarantee</h5>
+                </div>
+
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card shadow p-5 guaranteediv">
+                        <div class="text-center">
+                            <img src="./assets/images/guarantee/1.svg" class="" width="100" height="100" alt="">
+                        </div>
+                        <div class="mt-3">
+                            <p class="fw-bold text-center">100% Fueled By Passion</p>
+                            <p>It's our guarantee that we will work tirelessly to ensure fast response time and high
+                                value solution.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-4 mb-3 ">
+                    <div class="card shadow p-5 guaranteediv">
+                        <div class="text-center">
+                            <img src="./assets/images/guarantee/2.svg" class="" width="100" height="100" alt="">
+                        </div>
+                        <div class="mt-3">
+                            <p class="fw-bold text-center">Satisfaction Guarantee</p>
+                            <p>Our promise-to-Deliver is the ARK of our customer-centric, value-based approach.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="card shadow p-5 guaranteediv">
+                        <div class="text-center">
+                            <img src="./assets/images/guarantee/3.svg" width="100" height="100" alt="">
+                        </div>
+                        <div class="mt-3">
+                            <p class="fw-bold text-center">Professional Support</p>
+                            <p>By engineers who have more than 10 years experiences</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- media end -->
+
+    <!-- location start -->
+    <section class="bg-dark" style="padding-top: 100px; padding-bottom: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="mb-3">
+                    <h5 class="py-3 fs-3 text-light">Select a location to explore services and solutions relevant to
+                        you.</h5>
+                    <button class="btn btn-warning rounded-pill px-5 py-2 locationbtn" onclick="goToComingSoon()"><i
+                            class="fas fa-globe me-2"></i>
+                        Select a location <i class="fas fa-long-arrow-alt-right ms-2"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- location end -->
+
+    <!-- Start partner Section -->
+    <section class="p-4" id="partners">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <p class="fs-1 fw-bold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">Our partners are solutions
+                    that will transform your business and prepare you for the future! </p>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-4 mx-auto">
+                    <div class="mb-5">
+                        <p class="fw-bold partnerlists activeitems" data-filter="soc">SOC Security Operation Center
+                            Solutions</p>
+                        <p class="fw-bold partnerlists" data-filter="datasecurity">Data Security Solutions</p>
+                        <p class="fw-bold partnerlists" data-filter="endpointsecurity">Endpoint Security Solutions</p>
+                        <p class="fw-bold partnerlists" data-filter="networksecurity">Network Security Solutions</p>
+                        <p class="fw-bold partnerlists" data-filter="ipsolution">IP Solutions</p>
+                        <p class="fw-bold partnerlists" data-filter="cloudsolution">Cloud Solutions</p>
+                        <p class="fw-bold partnerlists" data-filter="comsolution">Communications & Call Center Solutions
+                        </p>
+                        <p class="fw-bold partnerlists" data-filter="wirelesssolution">Wireless & Monitoring Solutions
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-8">
+                    <div class="container">
+                        <div class="d-flex flex-wrap justify-content-center align-items-center gap-5">
+
+                            <div class="filters soc">
+                                <a href="./assets/images/partner/ixia.png" data-lightbox="partner" data-title="ixia">
+                                    <img src="./assets/images/partner/ixia.png" class="" alt="ixia">
+                                </a>
+                            </div>
+
+                            <div class="filters soc">
+                                <a href="./assets/images/partner/cyberbit.png" data-lightbox="partner"
+                                    data-title="cyberbit">
+                                    <img src="./assets/images/partner/cyberbit.png" class="" width="200" height="60"
+                                        alt="Cyberbit">
+                                </a>
+                            </div>
+
+                            <div class="filters soc">
+                                <a href="./assets/images/partner/bitsight.png" data-lightbox="partner"
+                                    data-title="bitsight">
+                                    <img src="./assets/images/partner/bitsight.png" class="" alt="bitsight">
+                                </a>
+                            </div>
+
+                            <div class="filters soc">
+                                <a href="./assets/images/partner/hadoop.png" data-lightbox="partner"
+                                    data-title="hadoop">
+                                    <img src="./assets/images/partner/hadoop.png" class="" alt="hadoop">
+                                </a>
+                            </div>
+
+                            <div class="filters soc">
+                                <a href="./assets/images/partner/hortonworks.png" data-lightbox="partner"
+                                    data-title="hortonworks">
+                                    <img src="./assets/images/partner/hortonworks.png" class="" alt="hortonworks">
+                                </a>
+                            </div>
+
+                            <div class="filters soc">
+                                <a href="./assets/images/partner/logrhythm.png" data-lightbox="partner"
+                                    data-title="logrhythm">
+                                    <img src="./assets/images/partner/logrhythm.png" class="" alt="logrhythm">
+                                </a>
+                            </div>
+
+                            <div class="filters soc">
+                                <a href="./assets/images/partner/gfin.png" data-lightbox="partner" data-title="gfin">
+                                    <img src="./assets/images/partner/gfin.png" class="" alt="gfin">
+                                </a>
+                            </div>
+
+                            <div class="filters soc">
+                                <a href="./assets/images/partner/bluedot.png" data-lightbox="partner"
+                                    data-title="bluedot">
+                                    <img src="./assets/images/partner/bluedot.png" class="" alt="bluedot">
+                                </a>
+                            </div>
+
+                            <div class="filters soc">
+                                <a href="./assets/images/partner/fnt.png" data-lightbox="partner" data-title="fnt">
+                                    <img src="./assets/images/partner/fnt.png" class="" alt="fnt">
+                                </a>
+                            </div>
+
+                            <div class="filters soc">
+                                <a href="./assets/images/partner/bigfix.png" data-lightbox="partner"
+                                    data-title="bigfix">
+                                    <img src="./assets/images/partner/bigfix.png" class="" alt="bigfix">
+                                </a>
+                            </div>
+
+                            <div class="filters datasecurity">
+                                <a href="./assets/images/partner/forcepoint.png" data-lightbox="partner"
+                                    data-title="forcepoint">
+                                    <img src="./assets/images/partner/forcepoint.png" class="" width="200" height="60"
+                                        alt="forcepoint">
+                                </a>
+                            </div>
+
+                            <div class="filters datasecurity">
+                                <a href="./assets/images/partner/solarwinds.png" data-lightbox="partner"
+                                    data-title="solarwinds">
+                                    <img src="./assets/images/partner/solarwinds.png" class="" alt="solarwinds">
+                                </a>
+                            </div>
+
+                            <div class="filters datasecurity">
+                                <a href="./assets/images/partner/lookingglass.png" data-lightbox="partner"
+                                    data-title="lookingglass">
+                                    <img src="./assets/images/partner/lookingglass.png" class="" width="200" height="60"
+                                        alt="lookingglass">
+                                </a>
+                            </div>
+
+                            <div class="filters datasecurity">
+                                <a href="./assets/images/partner/cyberark.png" data-lightbox="partner"
+                                    data-title="cyberark">
+                                    <img src="./assets/images/partner/cyberark.png" class="" alt="cyberark">
+                                </a>
+                            </div>
+
+                            <div class="filters datasecurity">
+                                <a href="./assets/images/partner/gemalto.png" data-lightbox="partner"
+                                    data-title="gemalto">
+                                    <img src="./assets/images/partner/gemalto.png" class="" alt="gemalto">
+                                </a>
+                            </div>
+
+                            <div class="filters datasecurity">
+                                <a href="./assets/images/partner/thales.png" data-lightbox="partner"
+                                    data-title="thales">
+                                    <img src="./assets/images/partner/thales.png" class="" alt="thales">
+                                </a>
+                            </div>
+
+                            <div class="filters datasecurity">
+                                <a href="./assets/images/partner/trend.png" data-lightbox="partner" data-title="trend">
+                                    <img src="./assets/images/partner/trend.png" class="" alt="trend">
+                                </a>
+                            </div>
+
+                            <div class="filters datasecurity">
+                                <a href="./assets/images/partner/ibm.png" data-lightbox="partner" data-title="ibm">
+                                    <img src="./assets/images/partner/ibm.png" class="" alt="ibm">
+                                </a>
+                            </div>
+
+                            <div class="filters datasecurity">
+                                <a href="./assets/images/partner/imperva.png" data-lightbox="partner"
+                                    data-title="imperva">
+                                    <img src="./assets/images/partner/imperva.png" class="" alt="imperva">
+                                </a>
+                            </div>
+
+                            <div class="filters endpointsecurity">
+                                <a href="./assets/images/partner/trend.png" data-lightbox="partner" data-title="trend">
+                                    <img src="./assets/images/partner/trend.png" class="" alt="trend">
+                                </a>
+                            </div>
+
+                            <div class="filters endpointsecurity">
+                                <a href="./assets/images/partner/ahnlab.png" data-lightbox="partner"
+                                    data-title="ahnlab">
+                                    <img src="./assets/images/partner/ahnlab.png" class="" alt="ahnlab">
+                                </a>
+                            </div>
+
+                            <div class="filters endpointsecurity">
+                                <a href="./assets/images/partner/safenet.png" data-lightbox="partner"
+                                    data-title="safenet">
+                                    <img src="./assets/images/partner/safenet.png" class="" alt="safenet">
+                                </a>
+                            </div>
+
+                            <div class="filters endpointsecurity">
+                                <a href="./assets/images/partner/rsa.png" data-lightbox="partner" data-title="rsa">
+                                    <img src="./assets/images/partner/rsa.png" class="" alt="rsa">
+                                </a>
+                            </div>
+
+                            <div class="filters endpointsecurity">
+                                <a href="./assets/images/partner/trusteer.png" data-lightbox="partner"
+                                    data-title="trusteer">
+                                    <img src="./assets/images/partner/trusteer.png" class="" alt="trusteer">
+                                </a>
+                            </div>
+
+                            <div class="filters endpointsecurity">
+                                <a href="./assets/images/partner/ca.png" data-lightbox="partner" data-title="ca">
+                                    <img src="./assets/images/partner/ca.png" class="" width="100" alt="ca">
+                                </a>
+                            </div>
+
+                            <div class="filters endpointsecurity">
+                                <a href="./assets/images/partner/mobileiron.png" data-lightbox="partner"
+                                    data-title="mobileiron">
+                                    <img src="./assets/images/partner/mobileiron.png" class="" alt="mobileiron">
+                                </a>
+                            </div>
+
+                            <div class="filters endpointsecurity">
+                                <a href="./assets/images/partner/paloalto.png" data-lightbox="partner"
+                                    data-title="paloalto">
+                                    <img src="./assets/images/partner/paloalto.png" class="" alt="paloalto">
+                                </a>
+                            </div>
+
+                            <div class="filters endpointsecurity">
+                                <a href="./assets/images/partner/cb.png" data-lightbox="partner" data-title="cb">
+                                    <img src="./assets/images/partner/cb.png" class="" alt="cb">
+                                </a>
+                            </div>
+
+                            <div class="filters networksecurity">
+                                <a href="./assets/images/partner/paloalto.jpeg" data-lightbox="partner"
+                                    data-title="paloalto">
+                                    <img src="./assets/images/partner/paloalto.jpeg" class="" width="200" height="80"
+                                        alt="paloalto">
+                                </a>
+                            </div>
+
+                            <div class="filters networksecurity">
+                                <a href="./assets/images/partner/trendtp.png" data-lightbox="partner"
+                                    data-title="trendtp">
+                                    <img src="./assets/images/partner/trendtp.png" class="" width="220" height="100"
+                                        alt="trendtp">
+                                </a>
+                            </div>
+
+                            <div class="filters networksecurity">
+                                <a href="./assets/images/partner/checkpoint.png" data-lightbox="partner"
+                                    data-title="checkpoint">
+                                    <img src="./assets/images/partner/checkpoint.png" class="" alt="checkpoint">
+                                </a>
+                            </div>
+
+                            <div class="filters networksecurity">
+                                <a href="./assets/images/partner/imperva.png" data-lightbox="partner"
+                                    data-title="imperva">
+                                    <img src="./assets/images/partner/imperva.png" class="" alt="imperva">
+                                </a>
+                            </div>
+
+                            <div class="filters networksecurity">
+                                <a href="./assets/images/partner/denyall.png" data-lightbox="partner"
+                                    data-title="denyall">
+                                    <img src="./assets/images/partner/denyall.png" class="" alt="denyall">
+                                </a>
+                            </div>
+
+                            <div class="filters networksecurity">
+                                <a href="./assets/images/partner/tufin.png" data-lightbox="partner" data-title="tufin">
+                                    <img src="./assets/images/partner/tufin.png" class="" alt="tufin">
+                                </a>
+                            </div>
+
+                            <div class="filters networksecurity">
+                                <a href="./assets/images/partner/algosec.png" data-lightbox="partner"
+                                    data-title="algosec">
+                                    <img src="./assets/images/partner/algosec.png" class="" alt="algosec">
+                                </a>
+                            </div>
+
+                            <div class="filters networksecurity">
+                                <a href="./assets/images/partner/f5.png" data-lightbox="partner" data-title="f5">
+                                    <img src="./assets/images/partner/f5.png" class="" alt="f5">
+                                </a>
+                            </div>
+
+                            <div class="filters networksecurity">
+                                <a href="./assets/images/partner/radware.png" data-lightbox="partner"
+                                    data-title="radware">
+                                    <img src="./assets/images/partner/radware.png" class="" alt="radware">
+                                </a>
+                            </div>
+
+                            <div class="filters networksecurity">
+                                <a href="./assets/images/partner/sandvine.png" data-lightbox="partner"
+                                    data-title="sandvine">
+                                    <img src="./assets/images/partner/sandvine.png" class="" alt="sandvine">
+                                </a>
+                            </div>
+
+                            <div class="filters ipsolution">
+                                <a href="./assets/images/partner/juniper.png" data-lightbox="partner"
+                                    data-title="juniper">
+                                    <img src="./assets/images/partner/juniper.png" class="" width="200" height="70"
+                                        alt="juniper">
+                                </a>
+                            </div>
+
+                            <div class="filters ipsolution">
+                                <a href="./assets/images/partner/arista.jpeg" data-lightbox="partner"
+                                    data-title="arista">
+                                    <img src="./assets/images/partner/arista.jpeg" class="" width="200" height="70"
+                                        alt="arista">
+                                </a>
+                            </div>
+
+                            <div class="filters cloudsolution">
+                                <a href="./assets/images/partner/aws.png" data-lightbox="partner" data-title="aws">
+                                    <img src="./assets/images/partner/aws.png" class="" width="150" height="100"
+                                        alt="aws">
+                                </a>
+                            </div>
+
+                            <div class="filters cloudsolution">
+                                <a href="./assets/images/partner/microsoftazure.jpeg" data-lightbox="partner"
+                                    data-title="aws">
+                                    <img src="./assets/images/partner/microsoftazure.jpeg" class="" width="200"
+                                        height="100" alt="aws">
+                                </a>
+                            </div>
+
+                            <div class="filters cloudsolution">
+                                <a href="./assets/images/partner/dellemc.jpeg" data-lightbox="partner"
+                                    data-title="dellemc">
+                                    <img src="./assets/images/partner/dellemc.jpeg" class="" width="120" height="120"
+                                        alt="dellemc">
+                                </a>
+                            </div>
+
+                            <div class="filters cloudsolution">
+                                <a href="./assets/images/partner/vmware.jpeg" data-lightbox="partner"
+                                    data-title="vmware">
+                                    <img src="./assets/images/partner/vmware.jpeg" class="" width="120" height="120"
+                                        alt="vmware">
+                                </a>
+                            </div>
+
+                            <div class="filters cloudsolution">
+                                <a href="./assets/images/partner/awsvmware.png" data-lightbox="partner"
+                                    data-title="awsvmware">
+                                    <img src="./assets/images/partner/awsvmware.png" class="" width="150" height="100"
+                                        alt="awsvmware">
+                                </a>
+                            </div>
+
+                            <div class="filters comsolution">
+                                <a href="./assets/images/partner/airwatch.png" data-lightbox="partner"
+                                    data-title="airwatch">
+                                    <img src="./assets/images/partner/airwatch.png" class="" width="180" height="100"
+                                        alt="airwatch">
+                                </a>
+                            </div>
+
+                            <div class="filters comsolution">
+                                <a href="./assets/images/partner/mobileiron.png" data-lightbox="partner"
+                                    data-title="mobileiron">
+                                    <img src="./assets/images/partner/mobileiron.png" class="img-fluid"
+                                        alt="mobileiron">
+                                </a>
+                            </div>
+
+                            <div class="filters comsolution">
+                                <a href="./assets/images/partner/skype.png" data-lightbox="partner" data-title="skype">
+                                    <img src="./assets/images/partner/skype.png" class="" width="180" height="100"
+                                        alt="skype">
+                                </a>
+                            </div>
+
+                            <div class="filters comsolution">
+                                <a href="./assets/images/partner/alcatellucent.png" data-lightbox="partner"
+                                    data-title="alcatellucent">
+                                    <img src="./assets/images/partner/alcatellucent.png" class="" width="220"
+                                        height="80" alt="alcatellucent">
+                                </a>
+                            </div>
+
+                            <div class="filters comsolution">
+                                <a href="./assets/images/partner/avaya.png" data-lightbox="partner" data-title="avaya">
+                                    <img src="./assets/images/partner/avaya.png" class="" width="180" height="70"
+                                        alt="avaya">
+                                </a>
+                            </div>
+
+                            <div class="filters comsolution">
+                                <a href="./assets/images/partner/poly.png" data-lightbox="partner" data-title="poly">
+                                    <img src="./assets/images/partner/poly.png" class="" width="180" height="80"
+                                        alt="poly">
+                                </a>
+                            </div>
+
+                            <div class="filters comsolution">
+                                <a href="./assets/images/partner/lifesize.png" data-lightbox="partner"
+                                    data-title="lifesize">
+                                    <img src="./assets/images/partner/lifesize.png" class="" alt="lifesize">
+                                </a>
+                            </div>
+
+                            <div class="filters comsolution">
+                                <a href="./assets/images/partner/genesys.jpg" data-lightbox="partner"
+                                    data-title="genesys">
+                                    <img src="./assets/images/partner/genesys.jpg" class="" width="180" height="60"
+                                        alt="genesys">
+                                </a>
+                            </div>
+
+                            <div class="filters wirelesssolution">
+                                <a href="./assets/images/partner/solarwinds.png" data-lightbox="partner"
+                                    data-title="solarwinds">
+                                    <img src="./assets/images/partner/solarwinds.png" class="" alt="solarwinds">
+                                </a>
+                            </div>
+
+                            <div class="filters wirelesssolution">
+                                <a href="./assets/images/partner/savone.jpeg" data-lightbox="partner"
+                                    data-title="savone">
+                                    <img src="./assets/images/partner/savone.jpeg" class="" width="200" height="100"
+                                        alt="savone">
+                                </a>
+                            </div>
+
+                            <div class="filters wirelesssolution">
+                                <a href="./assets/images/partner/ruckus.png" data-lightbox="partner"
+                                    data-title="ruckus">
+                                    <img src="./assets/images/partner/ruckus.png" class="" width="200" height="100"
+                                        alt="ruckus">
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- End partner Section -->
+
+    <!-- Start contact Section -->
+    <section class="p-5 contact" id="contact">
+
+        <div class="container-fluid">
+            <div class="mb-5">
+                <p class="text-light fs-3 fw-bold">Connect with us</p>
+                <p><a href="./comingsoon.html" class="text-light contactus">Contact Us <i
+                            class="fas fa-long-arrow-alt-right"></i></a>
+                </p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-12 col-md-5 mx-auto mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61118.00031578804!2d96.08021405018627!3d16.7828925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb7afa6a41b1%3A0xa056b495f4b29597!2sCity%20Mall%20St.%20John!5e0!3m2!1sen!2smm!4v1751098152931!5m2!1sen!2smm"
+                                class="w-100" style="height: 300px;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-5 mx-auto">
+                    <div class="d-flex justify-content-center flex-column align-items-center p-5">
+
+                        <div>
+                            <p class="text-center text-light fs-1 fw-bold">Get in Touch</p>
+                            <p class="text-center fs-5 text-light">Let's discuss how we can help transform your business
+                            </p>
+                        </div>
+
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="#contactmodal">Send Message</button>
+
+                        <div class="modal fade" id="contactmodal">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="">New message</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="p-2">
+                                            <div class="mb-3">
+                                                <label for="name" class="col-form-label">Name: </label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="email" class="col-form-label">Email: </label>
+                                                <input type="email" class="form-control">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Message:</label>
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-warning">Send message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- End contact Section -->
+
+    <!-- footer start -->
+    <section class="px-5 pt-5 pb-2 bg-dark">
+        <div class="container-fluid">
+            <div class="row mb-5">
+                <div class="mb-5">
+                    <div>
+                        <a href="./index.html" class="navbar-brand text-light mx-3">
+                            <img src="./assets/images/logo.png" width="100" class="" alt="">
+                            <span class="text-uppercase fs-5 fw-bold mx-2 footertitle">Aero Myanmar</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center flex-wrap gap-5">
+                    <div class="">
+                        <a href="#" class="text-light small footertext">Home</a>
+                    </div>
+                    <div class="">
+                        <a href="#services" class="text-light small footertext">Services</a>
+                    </div>
+                    <div class="">
+                        <a href="#aboutus" class="text-light small footertext">About Us</a>
+                    </div>
+                    <div class="">
+                        <a href="#partners" class="text-light small footertext">Partners</a>
+                    </div>
+                    <div class="">
+                        <a href="#contact" class="text-light small footertext">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center flex-wrap gap-4 footeras">
+                <a href="./comingsoon.html" class="text-secondary footertext">Sitemap</a>
+                <a href="./comingsoon.html" class="text-secondary footertext">Term of Use</a>
+                <a href="./comingsoon.html" class="text-secondary footertext">Prvacy Statement for GDPR</a>
+                <a href="./comingsoon.html" class="text-secondary footertext">Cookie Policy</a>
+                <a href="./comingsoon.html" class="text-secondary footertext">Social Media Policy</a>
+                <a href="./comingsoon.html" class="text-secondary footertext">Contact Us</a>
+                <a href="./comingsoon.html" class="text-secondary footertext">Privacy Statement</a>
+                <a href="./comingsoon.html" class="text-secondary footertext">Accessibility</a>
+                <a href="./comingsoon.html" class="text-secondary footertext">Cookie Preferences</a>
+                <a href="./comingsoon.html" class="text-secondary footertext">Copyright</a>
+            </div>
+
+            <div class="text-light d-flex justify-content-between pt-4 border-top mt-5">
+                <p class="small">&copy; <span id="getyear">2000</span> Copyright. Inc,All rights reserved</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="mx-2"><a href="javascript:void(0)" class="nav-link footericon"><i
+                                class="fab fa-twitter"></i></a></li>
+                    <li class="mx-2"><a href="javascript:void(0)" class="nav-link footericon"><i
+                                class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="mx-2"><a href="javascript:void(0)" class="nav-link footericon"><i
+                                class="fab fa-facebook"></i></a></li>
+                    <li class="ms-2"><a href="javascript:void(0)" class="nav-link footericon"><i
+                                class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- footer end -->
+
+    <!-- Start Back To Top Section -->
+    <div class="fixed-bottom">
+        <a href="index.html" class="btn-backtotops">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </div>
+    <!-- End Back To Top Section -->
+
+
+
+    <!-- bootstrap css1 js1 -->
+    <script src="./assets/libs/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery js1 -->
+    <script src="./assets/libs/jquery/jquery-3.7.1.min.js"></script>
+    <!-- jquery ui css1 js1 -->
+    <script src="./assets/libs/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <!-- lightbox2 css1 js1 -->
+    <script src="./assets/libs/lightbox2-2.11.4/dist/js/lightbox.min.js"></script>
+    <!-- custom js -->
+    <script src="./classic/app.js"></script>
+
+</body>
+
+</html>

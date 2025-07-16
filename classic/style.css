@@ -1,0 +1,672 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    padding: 0;
+    margin: 0;
+}
+
+/* nav start */
+nav {
+    box-shadow: 0px 0px 20px white;
+}
+
+.navbar-toggler {
+    border-color: white;
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler:focus {
+    border-color: white;
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navmenus {
+    transition: all 0.5s ease;
+}
+
+.navmenus:hover {
+    color: #0ff;
+    text-shadow:
+        0 0 5px #0ff,
+        0 0 10px #0ff,
+        0 0 20px #0ff,
+        0 0 40px #0ff;
+    letter-spacing: 1px;
+}
+
+/* nav end */
+
+/* banner start */
+#bannercarousel,
+.carousel-inner,
+.carousel-item {
+    height: 90vh;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 992px) {
+
+    #bannercarousel,
+    .carousel-inner,
+    .carousel-item {
+        height: 70vh;
+    }
+}
+
+.readmorebtn {
+    position: relative;
+    overflow: hidden;
+    color: #000;
+    background-color: #ffc107;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 0 0px rgba(255, 193, 7, 0.6);
+    border: none;
+}
+
+.readmorebtn::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.3), transparent);
+    transform: rotate(25deg);
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.readmorebtn:hover::before {
+    top: -50%;
+    left: 110%;
+}
+
+.readmorebtn:hover {
+    color: white;
+    background-color: #ffca2c;
+    box-shadow: 0 0 20px 5px rgba(255, 193, 7, 0.8), 0 0 30px 10px rgba(255, 193, 7, 0.4);
+    transform: scale(1.05);
+}
+
+.readmorebtn span {
+    position: relative;
+    z-index: 2;
+}
+
+
+.bannertext {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fadeDown 1s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+.readmorebtn {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fadeDown 1s ease-out forwards;
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* banner end */
+
+/* spotlight start */
+
+.spotlightdiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.spotlightdiv p {
+    text-shadow: 0 0 10px #fff, 0 0 20px #999;
+}
+
+
+.spotlightcards {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    height: 400px;
+}
+
+.spotlightcards::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: background-color 0.4s ease;
+    z-index: 1;
+}
+
+.spotlightcards:hover::before {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.spotlightcards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform .5s;
+}
+
+.spotlightcards:hover img {
+    transform: scale(1.1);
+}
+
+.servicelists li {
+    text-shadow: 0 0 10px #fff, 0 0 20px #999;
+}
+
+/* spotlight end */
+
+/* werone start */
+.weronelearnmore {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.weronelearnmore i {
+    transition: transform 0.3s ease;
+}
+
+.weronelearnmore:hover {
+    color: #000 !important;
+}
+
+.weronelearnmore:hover i {
+    transform: translateX(5px);
+}
+
+.weronereadmore {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.weronereadmore i {
+    transition: transform 0.3s ease;
+}
+
+.weronecards:hover .weronereadmore {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: white !important;
+}
+
+.weronecards:hover .weronereadmore i {
+    transform: translateX(5px);
+}
+
+.weronecards {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    height: 400px;
+}
+
+.weronediv {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    z-index: 2;
+}
+
+.weronecards::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: background-color 0.4s ease;
+    z-index: 1;
+}
+
+.weronecards:hover::before {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.weronecards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform .5s;
+}
+
+.weronecards:hover img {
+    transform: scale(1.1);
+}
+
+.fromlefts {
+    animation-name: left;
+    animation-duration: 3s;
+}
+
+.fromrights {
+    animation-name: right;
+    animation-duration: 3s;
+}
+
+@keyframes left {
+    from {
+        transform: translateX(-250px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes right {
+    from {
+        transform: translateX(250px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* werone end */
+
+/* for certification */
+.scroll-section {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 20px 0;
+}
+
+.scroll-track {
+  display: inline-flex;
+  animation: scroll-left 35s linear infinite;
+}
+
+.scroll-track img {
+  height: 100px; /* Adjust as needed */
+  margin-right: 100px;
+  object-fit: contain;
+}
+
+/* Animation keyframes */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-130%);
+  }
+}
+/* for certification */
+
+/* investor start */
+.investorreadmore {
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    z-index: 2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.investorreadmore i {
+    transition: transform 0.3s ease;
+}
+
+.investorcards:hover .investorreadmore {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: white !important;
+}
+
+.investorcards:hover .investorreadmore i {
+    transform: translateX(5px);
+}
+
+.investordiv {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: 2;
+}
+
+
+.investorcards {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    height: 400px;
+}
+
+.investorcards::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.4s ease;
+    z-index: 1;
+}
+
+.investorcards:hover::before {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.investorcards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform .5s;
+}
+
+.investorcards:hover img {
+    transform: scale(1.1);
+}
+
+/* investor end */
+
+
+
+/* media start */
+.guaranteediv {
+    height: 450px;
+}
+
+@media (max-width: 770px) {
+    .guaranteediv {
+        height: 350px;
+    }
+}
+
+@media (min-width: 1028px) {
+    .guaranteediv {
+        height: 350px;
+    }
+}
+
+/* media end */
+
+/* location start */
+.locationbtn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.locationbtn i:last-child {
+    transition: transform 0.5s ease;
+}
+
+.locationbtn:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+.locationbtn:hover i:last-child {
+    transform: translateX(10px);
+}
+
+/* location end */
+
+/* Start partner Section */
+.partnerlists {
+    color: #777;
+    cursor: pointer;
+    user-select: none;
+    cursor: pointer;
+}
+
+.activeitems {
+    color: red;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* end partner Section */
+
+/* contact start */
+.contact {
+    background-image: linear-gradient(100deg,
+            rgba(0, 0, 0, 0.9) 50%,
+            rgba(0, 0, 0, 0.5) 30%,
+            rgba(0, 0, 0, 0.9) 60%,
+            rgba(0, 0, 0, 0.8) 70%,
+            rgba(0, 0, 0, 0.9) 100%,
+            transparent 70%), url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+.contactus {
+    text-decoration: none;
+}
+
+.contactus i {
+    transition: transform 0.3s ease;
+}
+
+.contactus:hover i {
+    transform: translateX(5px);
+}
+
+/* contact end */
+
+
+/* footer start */
+.footertitle {
+    color: #0ff;
+    text-shadow:
+        0 0 5px #0ff,
+        0 0 10px #0ff,
+        0 0 20px #0ff,
+        0 0 40px #0ff;
+    font-weight: bold;
+}
+
+
+.footertext {
+    text-decoration: none;
+}
+
+.footertext:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.footeras {
+    font-size: 12px;
+}
+
+.footericon:hover .fa-twitter {
+    color: #1DA1F2;
+    text-shadow: 0 0 6px #1DA1F2, 0 0 12px #1DA1F2, 0 0 18px #1DA1F2;
+}
+
+
+.footericon:hover .fa-instagram {
+    color: #E1306C;
+    text-shadow: 0 0 6px #E1306C, 0 0 12px #E1306C, 0 0 18px #E1306C;
+}
+
+
+.footericon:hover .fa-facebook {
+    color: #1877F2;
+    text-shadow: 0 0 6px #1877F2, 0 0 12px #1877F2, 0 0 18px #1877F2;
+}
+
+
+.footericon:hover .fa-linkedin-in {
+    color: #0A66C2;
+    text-shadow: 0 0 6px #0A66C2, 0 0 12px #0A66C2, 0 0 18px #0A66C2;
+}
+
+/* footer end */
+
+
+
+/* Start Back To Top  */
+.btn-backtotops {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 18px;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    z-index: 1000;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-backtotops:hover {
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.15);
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
+
+/* End Back To Top  */
+
+/* spotlight animation */
+.spotlightcards {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.spotlightcards.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* spotlight animation */
+
+/* werone animation */
+.weronecards {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.weronecards.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* werone animation */
+
+
+/* mission animation */
+.missioncards {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.missioncards.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* mission animation */
+
+/* investor animation */
+.investorcards {
+    opacity: 0;
+    transform: rotateX(90deg);
+    transform-origin: bottom center;
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.investorcards.visible {
+    opacity: 1;
+    transform: rotateX(0);
+}
+
+/* investor animation */
+
+@keyframes flipInY {
+    0% {
+        transform: perspective(400px) rotateY(90deg);
+        opacity: 0;
+    }
+
+    40% {
+        transform: perspective(400px) rotateY(-20deg);
+        opacity: 1;
+    }
+
+    60% {
+        transform: perspective(400px) rotateY(10deg);
+    }
+
+    80% {
+        transform: perspective(400px) rotateY(-5deg);
+    }
+
+    100% {
+        transform: perspective(400px) rotateY(0deg);
+    }
+}
+
+.mediacards {
+    opacity: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.mediacards.visible {
+    animation: flipInY 0.8s ease forwards;
+    opacity: 1;
+}
